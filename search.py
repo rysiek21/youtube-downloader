@@ -1,7 +1,7 @@
-from pytube import Search
-import sys
+import main
 import donwloader
 
+from pytube import Search
 from colorama import Fore
 
 
@@ -28,7 +28,7 @@ def search():
         count += 1
     chosen_video = input(Fore.CYAN + "Number of video to download" + Fore.RED + " ['exit' to leave]: " + Fore.RESET)
     if chosen_video == "exit":
-        sys.exit()
+        main.load()
     else:
         while True:
             file_format = input(
