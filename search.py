@@ -18,7 +18,7 @@ def search():
             if remaining % 3600 != remaining:
                 hours += 1
                 remaining -= 3600
-            if remaining % 60 != remaining:
+            elif remaining % 60 != remaining:
                 minutes += 1
                 remaining -= 60
             else:
